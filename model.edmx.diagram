@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="830b2abb36584cf2b62f6de47dfb9a89" Name="Diagram1">
+        <EntityTypeShape EntityType="THEGIOIDIDONGModel.CHITIET_DONHANG" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="THEGIOIDIDONGModel.DONHANG" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="THEGIOIDIDONGModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="THEGIOIDIDONGModel.SANPHAM" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="THEGIOIDIDONGModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="THEGIOIDIDONGModel.FK_CHITIET_DONHANG_DONHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="THEGIOIDIDONGModel.FK_CHITIET_DONHANG_SANPHAM" ManuallyRouted="false" />
+        <AssociationConnector Association="THEGIOIDIDONGModel.FK_DONHANG_KHACHHANG" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
