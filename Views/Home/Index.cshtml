@@ -4,10 +4,26 @@
     ViewBag.Title = "Danh sách sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+    <div style="float: right">
+        <div class="toast ml-auto" role="alert" data-delay="700" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto text-primary">Giỏ hàng</strong>
+                <small class="text-muted"></small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="toast-body" id="message">
+                Hey, there! This is a Bootstrap 4 toast.
+            </div>
+        </div>
+    </div>
 
 <h2>@ViewBag.Title</h2>
 <a class="btn btn-primary btn-lg" role="button" href="/Home/ThanhToan">Thanh toán</a>
-
+<br />
+<br />
+<br />
 <div class="row">
     @foreach (var item in Model)
     {
@@ -25,20 +41,21 @@
     }
 </div>
 
+
 <script>
-    function themVaoGio(id)
-    {
-        var cookieName = "sanpham"+id;
+    function themVaoGio(id) {
+        var cookieName = "sanpham" + id;
         var soluong = 1;
         if (getCookie(cookieName) != "") soluong = parseInt(getCookie(cookieName)) + 1;
         setCookie(cookieName, soluong, 365);
-        alert("Trong giỏ hàng đã có " + soluong + " sản phẩm này");
+        $("#message").html("Trong giỏ hàng đã có " + soluong + " sản phẩm này");
+        $('.toast').toast("show");
     }
 
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        var expires = "expires="+ d.toUTCString();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
 
@@ -46,7 +63,7 @@
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
+        for (var i = 0; i < ca.length; i++) {
             var c = ca[i];
             while (c.charAt(0) == ' ') {
                 c = c.substring(1);

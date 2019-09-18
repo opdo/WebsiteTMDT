@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Lab01\Lab01\model.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\ASUS FX505\Desktop\VINH_TMDT\VINH_TMDT\Lab01\Lab01\model.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

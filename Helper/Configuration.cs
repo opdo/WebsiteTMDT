@@ -17,8 +17,8 @@ namespace Lab01.Helper
             //var config = GetConfig();
             var config = new Dictionary<string, string>();
             config.Add("mode", "sandbox");
-            config.Add("clientId", "");
-            config.Add("clientSecret", "");
+            config.Add("clientId", "AWbqbirdvMJvOQZaJUa4sTaStPDltX3RJg_OM1hJ8eWE2x82iR8EJ7d-v4TyMdRiuc3lyGgfgypy1911");
+            config.Add("clientSecret", "ECtJVck1kUczDlenwrGm4LmJZl-3C9ey6-bheqoQY8zT2u20w1TjXV3NzQo7QTAsTcKBQdBLYDeKYwJD");
 
             ClientId = config["clientId"];
             ClientSecret = config["clientSecret"];
